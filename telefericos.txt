@@ -1,0 +1,12 @@
+<?php
+function calcularViagens($C, $A) {
+    $alunosPorViagem = $C - 1;
+    $viagens = intval(ceil($A / $alunosPorViagem));
+    return $viagens;
+}
+
+$C = intval(trim(fgets(STDIN)));
+$A = intval(trim(fgets(STDIN)));
+
+echo calcularViagens($C, $A);
+?>
